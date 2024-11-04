@@ -9,7 +9,7 @@ class Agent():
         self.image = image
 
         # Initializing the OpenAI client using api_key
-        self.client = OpenAI()
+        self.client = OpenAI(api_key=api_key)
 
         # Adding the first message on initialization, which is the agent prompt
         all_messages.append({"role": self.role, "content": prompt})
