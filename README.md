@@ -1,2 +1,2 @@
-# ai-debate
+# AI Debate
  
