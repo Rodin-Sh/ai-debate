@@ -26,13 +26,15 @@ def main():
     config = load_agent_prompts()
     all_messages = []
 
+    st.set_page_config(page_title='AI Debate')
+
     topic = ""
     st.title("AI Debate")
     
     topic = st.text_input(label="Debate Topic", placeholder="God's existence")
     while topic == "":
         st.write("Waiting on a topic...")
-        time.sleep(100)
+        time.sleep(1000)
 
     st.caption(f'''About "{topic.strip().title()}"''')
 
